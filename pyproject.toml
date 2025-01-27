@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "telegram-bot"
+version = "0.2.2"
+description = "Python bot that ..."
+authors = ["Cantor Dallocort"]
+readme = "README.md"
+package-mode = false  # Disable package mod as in messes with the installation
+
+
+[tool.poetry.dependencies]
+python = "^3.12"
+aiogram = { version = "^3.17.0", extras = ["fsm_storage"] } # For Telegram bots
+asyncio = "^3.4.3"                                         # For asynchronous programming
+logging = "^0.4.9.6"                                       # Configurable logging
+sqlalchemy = "^2.0.30"                                     # ORM framework
+asyncpg = "^0.30.0"                                        # DB access
+python-dotenv = "^1.0.1"                                   # .env file support for easy configuration
+apscheduler = "^3.10.4"                                    # for scheduled jobs
+openai = "^1.35.10"                                        # for LLM support
+python-binance = "^1.0.19"                                 # binance API
+pandas = "^2.2.2"                                          # data handling
+elasticsearch = "^8.14.0"                                  # Elastic access
+injector = "^0.22.0"                                       # DI container
+scipy = "^1.14.0"                                          # scientific functions
+greenlet = "^3.1.1"                                        # for async
+aiohttp = "^3.11.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

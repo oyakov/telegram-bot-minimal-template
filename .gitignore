@@ -4,6 +4,11 @@ __pycache__
 *.pyd
 .Python
 env
+.env
+.env.dev
+.env.prod
+*.log.*
+*.log
 venv
 ENV
 VENV
